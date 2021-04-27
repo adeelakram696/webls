@@ -1,2 +1,3 @@
-export * from './interfaces';
-export * from './localStore';
+import { ILocalStore } from './interfaces';
+declare const initial: ILocalStore;
+export default initial;
