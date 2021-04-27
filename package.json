@@ -1,0 +1,51 @@
+{
+  "name": "webls",
+  "version": "1.0.2",
+  "description": "Local store helps to communicate with browser local storage, you can store any data plain or encrypted, add listener with local storage",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildts": "tsc --emitDeclarationOnly",
+    "build": "npm run buildts && npx babel src --out-dir dist --extensions '.ts' --config-file ./.babelrc"
+  },
+  "keywords": [
+    "local-storage",
+    "localstorage",
+    "webstorage",
+    "browser-storage",
+    "localstore",
+    "web-storage",
+    "encryptedlocalstorage",
+    "webls",
+    "weblocalstorage",
+    "web-local-storage",
+    "local-store",
+    "ls",
+    "browser-local-storage",
+    "localstorage-listener",
+    "storage-listner"
+  ],
+  "author": "Adeel Akram",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/node": "^15.0.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adeelakram696/webls"
+  },
+  "bugs": {
+    "url": "https://github.com/adeelakram696/webls/issues"
+  },
+  "homepage": "https://github.com/adeelakram696/webls#readme"
+}
