@@ -1,4 +1,3 @@
-import moment from 'moment';
 import * as CryptoJS from './crypto';
 import {
   FeedbackType,
@@ -101,7 +100,9 @@ const localStore = (): ILocalStore =>  {
       const { expiresAt } = jsonParsed;
 
       // if current time is after the saved expiry
-      const isExpired = moment().isAfter(expiresAt);
+      const current = new Date();
+      const expiredAt = new Date(expiresAt);
+      const isExpired = current > expiredAt;
       jsonParsed = {
         isExpired,
         data: jsonParsed.data,

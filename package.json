@@ -1,6 +1,6 @@
 {
   "name": "webls",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Local store helps to communicate with browser local storage, you can store any data plain or encrypted, add listener with local storage",
   "main": "dist/index.js",
   "scripts": {
@@ -28,8 +28,7 @@
   "author": "Adeel Akram",
   "license": "MIT",
   "dependencies": {
-    "crypto-js": "^4.0.0",
-    "moment": "^2.29.1"
+    "crypto-js": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
